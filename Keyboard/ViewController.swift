@@ -21,12 +21,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    // hide keyboard whenever touch any area in app
+    // 1. hide keyboard whenever touch any area in app
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
     
-    // 1. hide keyboard after press return key
+    // 2. hide keyboard after press return key
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -34,7 +34,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    // 2. in storyboard drag textfield to VC yellow button
+    // 3. in storyboard drag textfield to VC yellow button
     
 
 }
